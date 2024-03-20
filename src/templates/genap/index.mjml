@@ -1,0 +1,360 @@
+<mjml>
+  <mj-head>
+    <mj-html-attributes>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="content-background-color"
+        content-background-color="#FFFFFF"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="text-color"
+        text-color="#000000"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-family"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-size"
+        font-size="14px"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="line-height"
+        line-height="1.5"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="font-weight"
+        font-weight="400"
+      ></mj-html-attribute>
+      <mj-html-attribute
+        class="easy-email"
+        multiple-attributes="false"
+        attribute-name="responsive"
+        responsive="true"
+      ></mj-html-attribute>
+    </mj-html-attributes>
+
+    <mj-breakpoint width="480px" />
+
+    <mj-attributes>
+      <mj-text font-size="14px" />
+      <mj-text line-height="1.7" />
+      <mj-text font-weight="400" />
+      <mj-text line-height="1.5" />
+      <mj-all
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif"
+      />
+      <mj-text font-size="14px" />
+      <mj-text color="#000000" />
+      <mj-text line-height="1.5" />
+      <mj-text font-weight="400" />
+      <mj-wrapper background-color="#FFFFFF" />
+      <mj-section background-color="#FFFFFF" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#F2F2F2" width="600px">
+    <mj-section
+      padding="0px 0px 0px 0px"
+      border="none"
+      direction="ltr"
+      text-align="left"
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+    >
+      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
+        <mj-divider
+          align="center"
+          border-width="0"
+          border-style="solid"
+          border-color="#d0021b"
+          width="100%"
+          padding="20px 20px 20px 20px"
+        ></mj-divider>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="left"
+      padding="0px 0px 0px 0px"
+    >
+      <mj-column border="none" vertical-align="top" padding="0px 20px 0px 20px">
+        <mj-text align="left" font-size="0px" padding="10px 0px 10px 0px">
+          <div style="text-align: center">
+            <span
+              style="
+                --hover-color: rgb(var(--primary-4, #1890ff));
+                --selected-color: rgb(var(--primary-6, #1890ff));
+              "
+            >
+              <font
+                style="
+                  --hover-color: rgb(var(--primary-4, #1890ff));
+                  --selected-color: rgb(var(--primary-6, #1890ff));
+                "
+                size="4"
+                ><b style=""
+                  >MODERNIZE SEUS SISTEMAS E IMPULSIONE SUA EMPRESA 🚀</b
+                ></font
+              > </span
+            ><br />
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="left"
+      padding="0px 0px 0px 0px"
+    >
+      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
+        <mj-image
+          align="center"
+          height="auto"
+          src="https://storage.googleapis.com/ca-usercontent-prod.mailchimp.com/rendered-layouts/rid_8488ac61-4e8a-484e-81bb-8f18537e5312.png"
+          padding="0px 0px 0px 0px"
+        ></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="left"
+      padding="0px 0px 0px 0px"
+    >
+      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
+        <mj-text align="justify" padding="10px 25px 10px 25px"
+          >Olá {{ name }},
+          <div><br /></div>
+          <div>
+            Você já parou para pensar o quanto os
+            <font color="#d0021b">Sistemas Antigos</font> e as
+            <font color="#d0021b">PLANILHAS COMPLICADAS</font> estão
+            prejudicando a <font color="#d0021b">produtividade </font>e os
+            <font color="#d0021b">resultados</font> da sua empresa?
+          </div>
+          <div><br /></div>
+          <div>
+            Sabemos que encontrar sistemas simples de usar e que automatizam
+            processos pode ser um desafio, mas estamos aqui para oferecer uma
+            <b>Solução Personalizada</b> para você.
+          </div>
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div>
+            <span style="word-spacing: normal"
+              >Apresentamos nosso serviço de Desenvolvimento de Sistemas,
+              modernização e migração de sistemas antigos para soluções modernas
+              e em nuvem.</span
+            >
+          </div>
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div>
+            <span style="word-spacing: normal"
+              >Imagine se você pudesse ter:</span
+            >
+          </div>
+          <div>
+            <ol>
+              <li>
+                <span style="word-spacing: normal"
+                  ><b>Simplicidade:</b> Desenvolvemos sistemas intuitivos que
+                  qualquer colaborador será capaz de operar com pouco ou nenhum
+                  treinamento. sem complicações e horas perdidas tentando
+                  entender sistemas antigos e complexos e cheio de funções e
+                  botões que ninguém usa ou entende.</span
+                >
+              </li>
+              <li>
+                <span style="word-spacing: normal"
+                  ><b>Automatização de Processos:</b> Nossos sistemas modernos
+                  automatizam processos, eliminando tarefas manuais e reduzindo
+                  erros. Isso significa maior eficiência, economia de tempo e
+                  recursos.</span
+                >
+              </li>
+              <li>
+                <span style="word-spacing: normal"
+                  ><b>Acesso Remoto:</b> Com Sistemas em Nuvem você e seus
+                  colaboradores podem acessar todos os recursos da sua empresa a
+                  um Clique de qualquer lugar do mundo, a qualquer hora, através
+                  da internet. Isso permite maior flexibilidade e colaboração
+                  entre a equipe, independente da localização.</span
+                >
+              </li>
+              <li>
+                <span style="word-spacing: normal"
+                  ><b>Relatórios e Dashboards:</b> Nossos sistemas oferecem a
+                  geração de relatórios personalizados e dashboards detalhados
+                  que fornecem insights valiosos para a tomada de decisões
+                  estratégicas.</span
+                >
+              </li>
+            </ol>
+            <span style="word-spacing: normal"
+              >Sabemos que você, como um empresário ocupado, está sempre
+              buscando maneiras de ampliar seus resultados. E entendemos que a
+              melhor forma de fazer isso é desenvolvendo softwares que se
+              encaixem perfeitamente nas necessidades de sua empresa. criamos
+              softwares fáceis de usar, belos e que funcionam.</span
+            ><br />
+          </div>
+
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div>
+            <span style="word-spacing: normal"
+              >Não deixe a lentidão e a complexidade dos sistemas antigos
+              atrapalharem o crescimento da sua empresa. É hora de investir em
+              uma solução moderna e eficiente!</span
+            >
+          </div>
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Para começar a transformar os sistemas de sua empresa hoje mesmo,
+              <b
+                >AGENDE UMA REUNIÃO 100% ONLINE E GRATUITA CONOSCO. CLIQUE NO
+                BOTÂO</b
+              ></span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal">⬇️</span>
+          </div>
+        </mj-text>
+        <mj-button
+          align="center"
+          background-color="#ff1744"
+          color="#ffffff"
+          font-weight="bold"
+          border-radius="3px"
+          line-height="120%"
+          vertical-align="middle"
+          border="none"
+          text-align="center"
+          href="https://www.genap.com.br/?name={{%20name%20}}&email={{%20email%20}}"
+          width="90%"
+          font-size="14px"
+          font-style="normal"
+          padding="10px 25px 10px 25px"
+          inner-padding="10px 25px 10px 25px"
+          >AGENDE UMA REUNIÃO COM NOSSA EQUIPE!</mj-button
+        >
+        <mj-text align="justify" padding="10px 25px 10px 25px"
+          >Estamos ansiosos para ajudá-lo a impulsionar sua empresa para o
+          sucesso!
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div><span style="word-spacing: normal">Atenciosamente,</span></div>
+          <div>
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div style="text-align: left">
+            <span style="word-spacing: normal"><b>Guilherme Lima</b></span>
+          </div>
+          <div style="text-align: left">
+            <span style="font-size: small; word-spacing: normal"
+              >Project Manager</span
+            >
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section
+      background-repeat="repeat"
+      background-size="auto"
+      background-position="top center"
+      border="none"
+      direction="ltr"
+      text-align="left"
+      background-color="#2B2B2B"
+      padding="0px 0px 0px 0px"
+    >
+      <mj-column border="none" vertical-align="top" padding="0px 0px 0px 0px">
+        <mj-image
+          align="center"
+          height="auto"
+          src="https://www.genap.com.br/img/logo.png"
+          width="150px"
+          padding="20px 0px 20px 0px"
+        ></mj-image>
+        <mj-text align="left" color="#FFFFFF" padding="10px 25px 10px 25px">
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Copyright (C) 2024 GENAP. Todos os direitos reservados.</span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Nosso endereço de correspondência é:</span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Rua José Wellington Façanha, 300, Buriti, Pacajus - CE,
+              62970-000, Brasil.&nbsp;</span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              ><b>CNPJ 47.724.525/0001-33</b></span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"><br /></span>
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Quer deixar de recebe esses e-mails?</span
+            >
+          </div>
+          <div style="text-align: center">
+            <span style="word-spacing: normal"
+              >Você pode
+              <a
+                href="https://www.genap.com.br/unsubscribe"
+                target="_blank"
+                style="text-decoration: underline"
+                tabindex="-1"
+                >cancelar a assinatura</a
+              ></span
+            >
+          </div>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

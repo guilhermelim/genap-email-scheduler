@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2021",
+    "lib": ["ES2021"],
+
+    /* Modules */
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@/root/*": ["${__dirname}/../*"],
+      "@/*": ["./src/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/services/*": ["src/services/*"]
+    },
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": true,
+
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+
+    // Emit
+    "noEmit": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
