@@ -1,6 +1,7 @@
 import { sendEmail } from '@/services/email.service';
 
 import { handleEmailResult } from '../results';
+import { verifyEmail } from '../verifyEmail';
 
 let emailsSentToday: number = 0;
 
@@ -40,38 +41,42 @@ export async function sendEmailsSequentially(
       console.log('Limite diário de e-mails atingido.');
       break;
     }
-
     const { email, subject, text, html } = lead;
-    try {
-      const result = await sendEmail(email, subject, text, html);
-      emailsSentToday++;
-      await handleEmailResult(email, result, emailsSentToday);
 
-      if (!result.success) {
-        throw new Error('Erro ao enviar email.');
-      }
+    const emailIsValid = await verifyEmail(email);
 
-      consecutiveFailures = 0; // Reseta o contador de falhas consecutivas após um envio bem-sucedido
-    } catch (error) {
-      consecutiveFailures++;
-      console.error(`Erro ao enviar e-mail para ${email}:`, error);
-      await handleEmailResult(
-        email,
-        {
-          success: false,
-          message: 'Erro ao enviar email.',
-          error: (error as Error)?.message ?? '',
-        },
-        emailsSentToday,
-      );
-      console.log(
-        `consecutiveFailures: ${consecutiveFailures} | maxConsecutiveFailures: ${maxConsecutiveFailures}`,
-      );
-      if (consecutiveFailures >= maxConsecutiveFailures) {
-        console.log(
-          `Parando o envio após ${maxConsecutiveFailures} falhas seguidas.`,
+    if (emailIsValid) {
+      try {
+        const result = await sendEmail(email, subject, text, html);
+        emailsSentToday++;
+        await handleEmailResult(email, result, emailsSentToday);
+
+        if (!result.success) {
+          throw new Error('Erro ao enviar email.');
+        }
+
+        consecutiveFailures = 0; // Reseta o contador de falhas consecutivas após um envio bem-sucedido
+      } catch (error) {
+        consecutiveFailures++;
+        console.error(`Erro ao enviar e-mail para ${email}:`, error);
+        await handleEmailResult(
+          email,
+          {
+            success: false,
+            message: 'Erro ao enviar email.',
+            error: (error as Error)?.message ?? '',
+          },
+          emailsSentToday,
         );
-        break;
+        console.log(
+          `consecutiveFailures: ${consecutiveFailures} | maxConsecutiveFailures: ${maxConsecutiveFailures}`,
+        );
+        if (consecutiveFailures >= maxConsecutiveFailures) {
+          console.log(
+            `Parando o envio após ${maxConsecutiveFailures} falhas seguidas.`,
+          );
+          break;
+        }
       }
     }
 

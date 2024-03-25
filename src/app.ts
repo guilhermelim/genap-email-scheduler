@@ -6,7 +6,7 @@ async function main(): Promise<void> {
     const leads = await getLeeds(); // Agora estamos chamando a função assíncrona para obter os leads
     await sendEmailsSequentially(leads, {
       delayBetweenEmailsMs: 5000,
-      maxEmailsPerHour: 300,
+      maxEmailsPerHour: 500,
       dailyEmailLimit: 1000,
     });
     console.log('Envio da lista de e-mails concluído.');
@@ -27,5 +27,9 @@ async function main(): Promise<void> {
   }
 }
 
-// Exemplo de uso:
 main();
+
+// console.log('Verificando email!');
+// verifyEmail('guilhermelima02@gmail.com');
+// verifyEmail('guilherme.lima02@gmail.com');
+// verifyEmail('guilhermem.lima2@outlook.com');

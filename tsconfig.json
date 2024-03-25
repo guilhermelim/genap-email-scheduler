@@ -36,6 +36,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["src/**/*"],
+  "include": ["declarations.d.ts", "src/**/*"],
   "exclude": ["node_modules", "build"]
 }
